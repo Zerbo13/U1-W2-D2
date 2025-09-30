@@ -3,8 +3,8 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n1 = 3
-let n2 = 7
+let n1 = 7
+let n2 = 3
 
 if(n1>n2){
     console.log('N1 è il numero più grande')
@@ -21,13 +21,14 @@ if(n3!==5){
 }
 
 /* ESERCIZIO 3
+
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let n4 = 20
-if(n4 % 5){
-    console.log('N4 è divisibile per 5')
+if(n4 % 5 === 0){
+    console.log('Divisibile per 5')
 }
 
 /* ESERCIZIO 4
@@ -38,7 +39,7 @@ if(n4 % 5){
 let n5 = 8
 let n6 = 1
 if(n5 === 8 || n6 === 8){
-    console.log('Il valore è 8')
+    console.log('Ho verificato che uno dei due è 8')
 }
 
 /* ESERCIZIO 5
@@ -49,11 +50,14 @@ if(n5 === 8 || n6 === 8){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const totalShoppingCart = 70
-if(totalShoppingCart > 50){
-    console.log('Spedizione gratuita')
+const shippingCost = 10
+let total = 0
+if(totalShoppingCart <= 50){
+    total = totalShoppingCart + shippingCost
 }else{
-    console.log('Costo spedizione 10')
+    total = totalShoppingCart
 }
+console.log('Il totale del carrello è di', total )
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -61,6 +65,15 @@ if(totalShoppingCart > 50){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const totalShoppingCart2 = 70
+const shippingCost2 = 10
+let total2 = 0
+if(totalShoppingCart - totalShoppingCart2 * 0.2 <= 50 ){
+    total2 = totalShoppingCart2 + shippingCost2
+}else{
+    total2 = totalShoppingCart2
+}
+console.log('Il totale del carrello è di', total2 )
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -69,6 +82,7 @@ if(totalShoppingCart > 50){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -108,8 +122,6 @@ if(num % 2 === 0){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let val = 7
-let val1 = 4
-let val2 = 11
   if (val < 5) {
       console.log("Meno di 5");
     } else if (val < 10) {
@@ -143,7 +155,7 @@ delete me.lastName
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-delete me.skills[3]
+delete me.skills[2]
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
